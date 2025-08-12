@@ -39,9 +39,9 @@ function renderPalette(palette) {
     let tilesHtml = '';
     for (let color of palette) {
         tilesHtml += `
-        <li>
-            <button aria-label="Copy ${color.name.value} color" 
-                style="background-color: ${color.hex.value}; width: 100%; border: none;">
+        <li style="background-color: ${color.hex.value}">
+            <button class="btn-copy" aria-label="Copy ${color.name.value} color" 
+                style="background-color: #1F2937; width: 100%; border: none;">
                 ${color.name.value}
             </button>
         </li>

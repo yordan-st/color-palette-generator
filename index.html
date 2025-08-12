@@ -10,28 +10,26 @@
 <body>
     <header>
         <form id="colorForm">
-            <input id="colorEl" type="color">
+            <input class="input-color" id="colorEl" type="color" value="#d400ff">
             <select name="scheme-mode" id="schemeEl">
                 <option value="monochrome">Monochrome</option>
                 <option value="monochrome-dark">Monochrome-dark</option>
                 <option value="monochrome-light">Monochrome-light</option>
-                <option value="analogic">Analogic</option>
+                <option value="analogic" selected>Analogic</option>
                 <option value="complement">Complement</option>
                 <option value="analogic-complement">Analogic-complement</option>
                 <option value="triad">Triad</option>
             </select>
             <button id="submit">Get color scheme</button>
         </form>
-        <label class="switch">
+        <!-- <label class="switch">
             <input type="checkbox" id="themeswitchEl">
             <span class="slider"></span>
-        </label>
+        </label> -->
     </header>
     <main>
-       <section>
-            <ul id="color-palette">
-            </ul>        
-       </section> 
+        <ul class="color-palette" id="color-palette">
+        </ul>        
     </main>
 </body>
 </html>
